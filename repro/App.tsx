@@ -75,6 +75,11 @@ export default function BokehExample() {
   return (
     <View style={styles.container}>
       <View style={{position: 'absolute', zIndex: 1, backgroundColor: 'white'}}>
+        <Text>When the bug is present, the circles do not move.</Text>
+        <Text>
+          If the circles move it means you have
+          `react-native-macos+0.79.0.patch` applied.
+        </Text>
         <Text>To see the bug, please remove provided patch.</Text>
       </View>
       <Bokeh count={100} />
